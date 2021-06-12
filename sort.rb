@@ -75,7 +75,7 @@ end
 
 if File.exists?(file) == true
 
-  # get_lines(file)
+  # puts get_lines(file)
 
   sort_arr = sort_lines(get_lines(file))
 
