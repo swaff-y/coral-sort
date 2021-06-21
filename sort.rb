@@ -5,7 +5,7 @@ file = ARGV[0]
 #match the correct line types
 def get_lines file
   arr = []
-  File.foreach(file) do |line|
+  File.foreach(file,:encoding => 'utf-8') do |line|
     # regex match the type 'login'
     if line.match(/"type":"login"/) || line.match(/"type": "login"/)
       # remove the line break '/n' at end of line and great array on spaces
